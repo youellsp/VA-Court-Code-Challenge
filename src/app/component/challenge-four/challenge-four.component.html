@@ -1,18 +1,35 @@
 <div class="container">
   <div class="row">
     <div class="col-sm-6">
-      <div class="text-center">
-        <h4>Question: </h4>
+      <div>
+        <h6>Challenge: </h6>
         <code>
-
+          In your own words, describe the code below with as much technical detail as possible, include assumptions:
+          <pre>
+            {{questionText}}
+          </pre>
         </code>
       </div>
     </div>
     <div class="col-sm-6">
-      <div class="text-center">
-        <h4>Answer: </h4>
+      <div>
+        <h6>Response: </h6>
         <code>
-
+          <pre>
+            When the page has loaded, attach a function to the
+            element with the id of "groupsBTN" (presumably a
+            button, but not necessarily). The function will get
+            called when the button is clicked. It will retrieve
+            a JSON object from the URL "/instrument/groups".
+            The callback from the request with pass a response
+            and a status. If the request was successful, it will
+            assign the data from the response to a variable containing
+            an array of groups. For each group object in the array
+            of groups, add an HTML list item containing a label
+            (Instrument Group) and the name of the group, to the
+            element with the id of "groupList", presumably a
+            list element.
+          </pre>
         </code>
       </div>
     </div>
