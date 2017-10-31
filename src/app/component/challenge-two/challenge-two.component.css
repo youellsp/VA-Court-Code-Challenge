@@ -1,0 +1,44 @@
+/*.name-input{*/
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
+/*}*/
+
+/*mat-form-field.mat-form-field {*/
+  /*font-size: 16px;*/
+/*}*/
+
+#challenge-two-body{
+  padding: 20px;
+  margin-top: 10px;
+}
+
+#challenge-two-body-formatted{
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.grid-test-1 > figure.mat-figure {
+  justify-content: flex-start !important;
+}
+
+/*.challenge-tab-group{*/
+  /*border: 1px solid #e8e8e8;*/
+/*}*/
+
+/*#challenge-two-wrapper{*/
+  /*width: 100%;*/
+/*}*/
+
+/*.mat-form-field{*/
+  /*width: 500px;*/
+/*}*/
+
+/*#name-form-body{*/
+  /*width: 100%;*/
+  /*margin: 0 auto;*/
+/*}*/
+
+/*mat-grid-tile {*/
+  /*background: lightgrey;*/
+/*}*/
+

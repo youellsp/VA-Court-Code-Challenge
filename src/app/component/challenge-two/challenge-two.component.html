@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <i class="fa fa-github" aria-hidden="true"></i>
+      <form class="text-center name-form">
+        <mat-form-field class="example-full-width">
+          <input class="name-input" matInput placeholder="Full name" [formControl]="nameFormControl" [(ngModel)]="newNameInput.nameInput">
+          <mat-hint align="end">lastname, firstname; suffix</mat-hint>
+          <mat-error *ngIf="nameFormControl.hasError('pattern')">
+            Please enter a valid name <strong>lastname, firstname; suffix</strong>
+          </mat-error>
+          <mat-error *ngIf="nameFormControl.hasError('required')">
+            Name is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <button mat-icon-button [disabled]="!nameFormControl.valid || names.length == 10" (click)="addName(nameFormControl)">
+          <mat-icon>person_add</mat-icon>
+        </button>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <mat-list class="text-center">
+        <mat-list-item *ngFor="let name of names">
+          {{name.nameInput}}
+          <button mat-icon-button (click)="deleteName(name.id)">
+            <mat-icon>delete_forever</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </div>
+    <div class="col-sm-6">
+      <mat-tab-group class="text-center">
+        <mat-tab label="Fixed">
+          <mat-list>
+            <mat-list-item *ngFor="let name of names">
+              {{name.lastName}}, {{name.firstName}}<span *ngIf="name.suffix.length > 0">, {{name.suffix}}</span>
+            </mat-list-item>
+          </mat-list>
+        </mat-tab>
+        <mat-tab label="Load">
+          <mat-list>
+            <mat-list-item *ngFor="let name of names">
+              {{startId}}{{name.id}}|{{name.lastName}}|{{name.firstName}}<span *ngIf="name.suffix.length > 0">|{{name.suffix}}</span>
+            </mat-list-item>
+          </mat-list>
+        </mat-tab>
+        <mat-tab label="Duplicates">
+          <mat-list>
+            <mat-list-item *ngFor="let name of duplicates">
+              {{name.lastName}}, {{name.firstName}}<span *ngIf="name.suffix.length > 0">, {{name.suffix}}</span>
+            </mat-list-item>
+          </mat-list>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</div>
+

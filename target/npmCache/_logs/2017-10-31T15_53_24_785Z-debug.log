@@ -1,0 +1,39 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/8.5.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'deploy' ]
+2 info using npm@5.5.1
+3 info using node@v8.5.0
+4 verbose run-script [ 'predeploy', 'deploy', 'postdeploy' ]
+5 info lifecycle code-challenge@0.0.0~predeploy: code-challenge@0.0.0
+6 info lifecycle code-challenge@0.0.0~deploy: code-challenge@0.0.0
+7 verbose lifecycle code-challenge@0.0.0~deploy: unsafe-perm in lifecycle true
+8 verbose lifecycle code-challenge@0.0.0~deploy: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/patrickyouells/Development/Personal Workspace/VA Surpeme Court Code Challenge/Code-Challenge/node_modules/.bin:/Users/patrickyouells/mongodb/bin:/Users/patrickyouells/bin:/Users/patrickyouells/Development/apache-maven-3.5.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/patrickyouells/Development/Workspace/Core/streams/main.development//vbms-support-scripts
+9 verbose lifecycle code-challenge@0.0.0~deploy: CWD: /Users/patrickyouells/Development/Personal Workspace/VA Surpeme Court Code Challenge/Code-Challenge
+10 silly lifecycle code-challenge@0.0.0~deploy: Args: [ '-c', 'ng build --prod && firebase deploy' ]
+11 silly lifecycle code-challenge@0.0.0~deploy: Returned: code: 1  signal: null
+12 info lifecycle code-challenge@0.0.0~deploy: Failed to exec deploy script
+13 verbose stack Error: code-challenge@0.0.0 deploy: `ng build --prod && firebase deploy`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:280:16)
+13 verbose stack     at emitTwo (events.js:125:13)
+13 verbose stack     at EventEmitter.emit (events.js:213:7)
+13 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at emitTwo (events.js:125:13)
+13 verbose stack     at ChildProcess.emit (events.js:213:7)
+13 verbose stack     at maybeClose (internal/child_process.js:927:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+14 verbose pkgid code-challenge@0.0.0
+15 verbose cwd /Users/patrickyouells/Development/Personal Workspace/VA Surpeme Court Code Challenge/Code-Challenge
+16 verbose Darwin 16.7.0
+17 verbose argv "/usr/local/Cellar/node/8.5.0/bin/node" "/usr/local/bin/npm" "run" "deploy"
+18 verbose node v8.5.0
+19 verbose npm  v5.5.1
+20 error code ELIFECYCLE
+21 error errno 1
+22 error code-challenge@0.0.0 deploy: `ng build --prod && firebase deploy`
+22 error Exit status 1
+23 error Failed at the code-challenge@0.0.0 deploy script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
